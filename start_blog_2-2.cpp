@@ -8,27 +8,36 @@ int main() {
     string chr;
     vector<string> vt;
 
-    // ¹®ÀÚ¿­ ÀÔ·Â ¹Ş±â
+    // ë¬¸ìì—´ ì…ë ¥ ë°›ê¸°
     getline(cin, chr);
     vt.push_back(chr);
 
-    // º¤ÅÍÀÇ Ã¹ ¹øÂ° ¿ä¼Ò(¹®ÀÚ¿­)ÀÇ ¹İº¹ÀÚ¸¦ »ç¿ëÇÏ¿© ¹®ÀÚ º¯°æ
+    // ë²¡í„°ì˜ ì²« ë²ˆì§¸ ìš”ì†Œ(ë¬¸ìì—´)ì˜ ë°˜ë³µìë¥¼ ì‚¬ìš©í•˜ì—¬ ë¬¸ì ë³€ê²½
     for (auto it = vt[0].begin(); it != vt[0].end(); it++) {
         if (*it == 'h') {
             *it = 'H';
         }
-        if (*it == 'w') {
-            *it = 'W';
-        }
-        if (*it == 't') {
-            *it = 'T';
+        if (*it == 'e') {
+            *it = 'E';
         }
         if (*it == 'i') {
             *it = 'I';
         }
+        if (*it == 'o') {
+            *it = 'O';
+        }
+        if (*it == 'w') {
+            *it = 'W';
+        }
+        if (*it == 'r') {
+            *it = 'R';
+        }
+        if (*it == 'd') {
+            *it = 'D';
+        }
     }
 
-    // º¯°æµÈ ¹®ÀÚ¿­ Ãâ·Â
+    // ë³€ê²½ëœ ë¬¸ìì—´ ì¶œë ¥
     for (const string& p : vt) {
         cout << p;
     }
